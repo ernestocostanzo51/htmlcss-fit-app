@@ -1,0 +1,103 @@
+/*aggiunta fuocherello*/
+.stats-number{
+    position: absolute;
+}
+.stats-number:before{
+    content:"🔥";
+    position: relative;
+    top: -35px;
+    left: 50px;
+    transform:translateX(-50%);
+    font-size: 24px;    
+}
+/*cambio backgorund e font last child*/
+.stats-grid:last-child{
+    background-color: blueviolet;
+}
+
+.stats-grid:last-child span{
+    color: white;
+}
+/*effetto hover sulle grid */
+.stats-grid:hover{
+    transform: translateY(5px);
+    background-color: rgb(162, 113, 207);
+}
+
+/*evidenziamento secondo piano allenamento */
+
+.workout-plan:nth-child(2){
+    border-left: solid orange;
+    background-color: yellow;
+}
+
+/*bordi verdi per primo e ultimo esercizio*/
+
+.exercise-item:first-child{
+    border-left: solid green;
+    background-color: greenyellow;
+}
+
+.exercise-item:last-child{
+    border-left: solid green;
+    background-color: greenyellow;
+}
+
+/*aggiunta saette*/
+
+
+.exercise-item:nth-child(2){
+    position: relative;
+}
+.exercise-item:nth-child(2)::before{
+    position: absolute;
+    content: "⚡";
+    left: 27px;
+    top:14%;
+    transform: translateY(-50%);
+    font-size: 1rem;
+}
+
+.exercise-item:nth-child(4){
+    position: relative;
+}
+.exercise-item:nth-child(4)::before{
+    position: absolute;
+    content: "⚡";
+    left: 27px;
+    top:14%;
+    transform: translateY(-50%);
+    font-size: 1rem;
+}
+
+/*focus sui campi imput*/
+
+input:focus{
+    background-color: rgb(160, 242, 242) ;;
+    border-color: blue;
+    outline: none;
+    box-shadow: 0 0 16px rgba(0, 123, 255, 0.5);
+    transition: border-color 0.8s;
+    box-shadow: 0.8s;
+}
+
+label:focus{
+    background-color:rgb(160, 242, 242) ;
+    border-color: blue;
+    outline: none;
+    box-shadow: 0 0 16px rgba(0, 123, 255, 0.5);
+    transition: border-color 0.8s;
+    box-shadow: 0.8s;
+}
+
+.save-btn:hover{
+    transform: translateY(2px);
+    background-color: violet;
+    box-shadow: 0 0 16px rgba(0, 123, 255, 0.5);
+    box-shadow:  blue;
+
+
+}
+
+
+
